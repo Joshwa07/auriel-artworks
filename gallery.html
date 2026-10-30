@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Gallery | Auriel Artworks</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            AURIEL ARTWORKS
+        </a>
+
+        <button
+            type="button"
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="gallery.html" class="active-link">
+                    Gallery
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- GALLERY HEADING -->
+
+    <section class="gallery-hero">
+
+        <h1>Our Gallery</h1>
+
+        <p>
+            Explore portraits, paintings, murals and custom artworks.
+        </p>
+
+    </section>
+
+
+    <!-- CATEGORY FILTERS -->
+
+    <div class="gallery-filters">
+
+        <button
+            type="button"
+            class="filter-button active"
+            data-filter="all"
+        >
+            All
+        </button>
+
+        <button
+            type="button"
+            class="filter-button"
+            data-filter="portrait"
+        >
+            Portraits
+        </button>
+
+        <button
+            type="button"
+            class="filter-button"
+            data-filter="pencil"
+        >
+            Pencil Art
+        </button>
+
+        <button
+            type="button"
+            class="filter-button"
+            data-filter="painting"
+        >
+            Paintings
+        </button>
+
+        <button
+            type="button"
+            class="filter-button"
+            data-filter="mural"
+        >
+            Murals
+        </button>
+
+    </div>
+
+
+    <!-- GALLERY CARDS -->
+
+    <section class="gallery-grid">
+
+        <!-- CELEBRITY PORTRAIT -->
+
+        <div
+            class="gallery-item"
+            data-category="portrait"
+        >
+
+            <img
+                src="Images/celebrity.jpg"
+                alt="Celebrity Portrait"
+                class="gallery-image"
+                onclick="openLightbox(this)"
+            >
+
+            <div class="gallery-info">
+
+                <h3>Celebrity Portrait</h3>
+
+                <p>₹2,499</p>
+
+                <a
+                    href="https://wa.me/916382104061?text=Hi%20Auriel%20Artworks,%20I%20would%20like%20to%20order%20a%20celebrity%20portrait."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Order Similar Artwork
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- MURAL ARTWORK -->
+
+        <div
+            class="gallery-item"
+            data-category="mural"
+        >
+
+            <img
+                src="Images/mural.jpg"
+                alt="Modern Mural Artwork"
+                class="gallery-image"
+                onclick="openLightbox(this)"
+            >
+
+            <div class="gallery-info">
+
+                <h3>Modern Mural Artwork</h3>
+
+                <p>Starting from ₹40,000</p>
+
+                <a
+                    href="https://wa.me/916382104061?text=Hi%20Auriel%20Artworks,%20I%20would%20like%20to%20enquire%20about%20a%20mural."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Order Similar Artwork
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- CUSTOM PORTRAIT -->
+
+        <div
+            class="gallery-item"
+            data-category="portrait"
+        >
+
+            <img
+                src="Images/custom.jpg"
+                alt="Custom Portrait"
+                class="gallery-image"
+                onclick="openLightbox(this)"
+            >
+
+            <div class="gallery-info">
+
+                <h3>Custom Portrait</h3>
+
+                <p>₹3,499</p>
+
+                <a
+                    href="https://wa.me/916382104061?text=Hi%20Auriel%20Artworks,%20I%20would%20like%20to%20order%20a%20custom%20portrait."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Order Similar Artwork
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PENCIL PORTRAIT -->
+
+        <div
+            class="gallery-item"
+            data-category="pencil"
+        >
+
+            <img
+                src="Images/product2.jpg"
+                alt="Pencil Portrait"
+                class="gallery-image"
+                onclick="openLightbox(this)"
+            >
+
+            <div class="gallery-info">
+
+                <h3>Pencil Sketch</h3>
+
+                <p>₹1,499</p>
+
+                <a
+                    href="https://wa.me/916382104061?text=Hi%20Auriel%20Artworks,%20I%20would%20like%20to%20order%20a%20pencil%20portrait."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Order Similar Artwork
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- NATURE PAINTING -->
+
+        <div
+            class="gallery-item"
+            data-category="painting"
+        >
+
+            <img
+                src="Images/nature.jpg"
+                alt="Nature Painting"
+                class="gallery-image"
+                onclick="openLightbox(this)"
+            >
+
+            <div class="gallery-info">
+
+                <h3>Nature Painting</h3>
+
+                <p>₹2,999</p>
+
+                <a
+                    href="https://wa.me/916382104061?text=Hi%20Auriel%20Artworks,%20I%20would%20like%20to%20order%20a%20nature%20painting."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Order Similar Artwork
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LIGHTBOX -->
+
+    <div
+        id="lightbox"
+        class="lightbox"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Artwork preview"
+    >
+
+        <button
+            type="button"
+            class="lightbox-close"
+            onclick="closeLightbox()"
+            aria-label="Close artwork preview"
+        >
+            &times;
+        </button>
+
+        <img
+            id="lightbox-image"
+            src=""
+            alt="Large artwork preview"
+        >
+
+        <p id="lightbox-caption"></p>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+        /* LIGHTBOX */
+
+        function openLightbox(clickedImage) {
+            const lightbox = document.getElementById("lightbox");
+            const largeImage = document.getElementById("lightbox-image");
+            const caption = document.getElementById("lightbox-caption");
+
+            if (!lightbox || !largeImage || !caption) {
+                return;
+            }
+
+            largeImage.src = clickedImage.src;
+            largeImage.alt = clickedImage.alt;
+            caption.textContent = clickedImage.alt;
+
+            lightbox.classList.add("show");
+            document.body.classList.add("no-scroll");
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById("lightbox");
+
+            if (!lightbox) {
+                return;
+            }
+
+            lightbox.classList.remove("show");
+            document.body.classList.remove("no-scroll");
+        }
+
+        const lightbox = document.getElementById("lightbox");
+
+        if (lightbox) {
+            lightbox.addEventListener("click", function(event) {
+                if (event.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+        }
+
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "Escape") {
+                closeLightbox();
+            }
+        });
+
+
+        /* GALLERY FILTERS */
+
+        const filterButtons =
+            document.querySelectorAll(".filter-button");
+
+        const galleryItems =
+            document.querySelectorAll(".gallery-item");
+
+        filterButtons.forEach(function(button) {
+
+            button.addEventListener("click", function() {
+
+                const selectedCategory =
+                    button.dataset.filter;
+
+                filterButtons.forEach(function(filterButton) {
+                    filterButton.classList.remove("active");
+                });
+
+                button.classList.add("active");
+
+                galleryItems.forEach(function(item) {
+
+                    const artworkCategory =
+                        item.dataset.category;
+
+                    if (
+                        selectedCategory === "all" ||
+                        artworkCategory === selectedCategory
+                    ) {
+                        item.classList.remove("hide");
+                    } else {
+                        item.classList.add("hide");
+                    }
+
+                });
+
+            });
+
+        });
+
+
+        /* MOBILE MENU */
+
+        const menuToggle =
+            document.getElementById("menu-toggle");
+
+        const navLinks =
+            document.getElementById("nav-links");
+
+        if (menuToggle && navLinks) {
+
+            menuToggle.addEventListener("click", function() {
+
+                const menuIsOpen =
+                    navLinks.classList.toggle("show-menu");
+
+                menuToggle.classList.toggle("open");
+
+                menuToggle.setAttribute(
+                    "aria-expanded",
+                    menuIsOpen
+                );
+
+            });
+
+            navLinks.querySelectorAll("a").forEach(function(link) {
+
+                link.addEventListener("click", function() {
+                    navLinks.classList.remove("show-menu");
+                    menuToggle.classList.remove("open");
+
+                    menuToggle.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+                });
+
+            });
+
+        }
+    </script>
+
+</body>
+
+</html>
