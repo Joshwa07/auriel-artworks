@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Order a custom portrait, painting, canvas artwork or mural from Auriel Artworks."
+    >
+
+    <title>Order Custom Artwork | Auriel Artworks</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            AURIEL ARTWORKS
+        </a>
+
+        <button
+            type="button"
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="gallery.html">
+                    Gallery
+                </a>
+            </li>
+
+            <li>
+                <a href="order.html" class="active-link">
+                    Order Artwork
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- ORDER PAGE HEADER -->
+
+    <section class="order-hero">
+
+        <p>PERSONALISED ART COMMISSIONS</p>
+
+        <h1>Create Your Custom Artwork</h1>
+
+        <div class="order-intro">
+            Upload your reference photo, select your preferred artwork
+            style and size, and receive an estimated price instantly.
+        </div>
+
+    </section>
+
+
+    <!-- ORDER PAGE -->
+
+    <main class="order-layout">
+
+        <!-- ORDER FORM -->
+
+        <section class="order-form-card">
+
+            <form id="artwork-order-form">
+
+                <!-- PHOTO UPLOAD -->
+
+                <div class="form-section">
+
+                    <div class="form-section-heading">
+
+                        <span>01</span>
+
+                        <div>
+                            <h2>Upload Your Reference Photo</h2>
+
+                            <p>
+                                Upload a clear JPG, PNG or WEBP image.
+                                Maximum recommended size: 6 MB.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <label
+                        for="reference-photo"
+                        class="upload-area"
+                        id="upload-area"
+                    >
+
+                        <input
+                            type="file"
+                            id="reference-photo"
+                            accept="image/jpeg,image/png,image/webp"
+                        >
+
+                        <div
+                            class="upload-placeholder"
+                            id="upload-placeholder"
+                        >
+                            <div class="upload-icon">＋</div>
+
+                            <strong>Choose a reference photo</strong>
+
+                            <span>
+                                Click here to select an image
+                            </span>
+                        </div>
+
+                        <img
+                            id="photo-preview"
+                            class="photo-preview"
+                            src=""
+                            alt="Uploaded reference preview"
+                        >
+
+                    </label>
+
+                    <p
+                        class="form-message"
+                        id="photo-message"
+                        aria-live="polite"
+                    ></p>
+
+                </div>
+
+
+                <!-- ARTWORK TYPE -->
+
+                <div class="form-section">
+
+                    <div class="form-section-heading">
+
+                        <span>02</span>
+
+                        <div>
+                            <h2>Choose the Artwork Type</h2>
+
+                            <p>
+                                Select the style that best matches your idea.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="option-grid artwork-options">
+
+                        <label class="choice-card">
+
+                            <input
+                                type="radio"
+                                name="artwork-type"
+                                value="pencil"
+                                checked
+                            >
+
+                            <span class="choice-title">
+                                Pencil Portrait
+                            </span>
+
+                            <span class="choice-price">
+                                From ₹1,499
+                            </span>
+
+                        </label>
+
+
+                        <label class="choice-card">
+
+                            <input
+                                type="radio"
+                                name="artwork-type"
+                                value="colour-pencil"
+                            >
+
+                            <span class="choice-title">
+                                Colour Pencil Portrait
+                            </span>
+
+                            <span class="choice-price">
+                                From ₹2,499
+                            </span>
+
+                        </label>
+
+
+                        <label class="choice-card">
+
+                            <input
+                                type="radio"
+                                name="artwork-type"
+                                value="acrylic"
+                            >
+
+                            <span class="choice-title">
+                                Acrylic Painting
+                            </span>
+
+                            <span class="choice-price">
+                                From ₹2,999
+                            </span>
+
+                        </label>
+
+
+                        <label class="choice-card">
+
+                            <input
+                                type="radio"
+                                name="artwork-type"
+                                value="canvas"
+                            >
+
+                            <span class="choice-title">
+                                Canvas Painting
+                            </span>
+
+                            <span class="choice-price">
+                                From ₹3,499
+                            </span>
+
+                        </label>
+
+
+                        <label class="choice-card">
+
+                            <input
+                                type="radio"
+                                name="artwork-type"
+                                value="watercolour"
+                            >
+
+                            <span class="choice-title">
+                                Watercolour Painting
+                            </span>
+
+                            <span class="choice-price">
+                                From ₹2,499
+                            </span>
+
+                        </label>
+
+
+                        <label class="choice-card">
+
+                            <input
+                                type="radio"
+                                name="artwork-type"
+                                value="quadro"
+                            >
+
+                            <span class="choice-title">
+                                Quadro Wall Art
+                            </span>
+
+                            <span class="choice-price">
+                                From ₹3,999
+                            </span>
+
+                        </label>
+
+
+                        <label class="choice-card">
+
+                            <input
+                                type="radio"
+                                name="artwork-type"
+                                value="mural"
+                            >
+
+                            <span class="choice-title">
+                                Mural Painting
+                            </span>
+
+                            <span class="choice-price">
+                                From ₹350 per sq. ft.
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SIZE AND OPTIONS -->
+
+                <div class="form-section">
+
+                    <div class="form-section-heading">
+
+                        <span>03</span>
+
+                        <div>
+                            <h2>Select Size and Requirements</h2>
+
+                            <p>
+                                The available fields will change based on
+                                the selected artwork type.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- STANDARD ARTWORK OPTIONS -->
+
+                    <div id="standard-artwork-options">
+
+                        <div class="form-grid">
+
+                            <div class="form-field">
+
+                                <label for="artwork-size">
+                                    Artwork Size
+                                </label>
+
+                                <select id="artwork-size">
+
+                                    <option value="a4">
+                                        A4
+                                    </option>
+
+                                    <option value="a3">
+                                        A3
+                                    </option>
+
+                                    <option value="a2">
+                                        A2
+                                    </option>
+
+                                    <option value="a1">
+                                        A1
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-field">
+
+                                <label for="people-count">
+                                    Number of People
+                                </label>
+
+                                <select id="people-count">
+
+                                    <option value="1">
+                                        1 Person
+                                    </option>
+
+                                    <option value="2">
+                                        2 People
+                                    </option>
+
+                                    <option value="3">
+                                        3 People
+                                    </option>
+
+                                    <option value="4">
+                                        4 People
+                                    </option>
+
+                                    <option value="5">
+                                        5 People
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-field">
+
+                                <label for="frame-option">
+                                    Frame Option
+                                </label>
+
+                                <select id="frame-option">
+
+                                    <option value="none">
+                                        No Frame
+                                    </option>
+
+                                    <option value="standard">
+                                        Standard Frame
+                                    </option>
+
+                                    <option value="premium">
+                                        Premium Frame
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-field">
+
+                                <label for="background-option">
+                                    Background Style
+                                </label>
+
+                                <select id="background-option">
+
+                                    <option value="simple">
+                                        Simple Background
+                                    </option>
+
+                                    <option value="detailed">
+                                        Detailed Background
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-field">
+
+                                <label for="orientation">
+                                    Orientation
+                                </label>
+
+                                <select id="orientation">
+
+                                    <option value="portrait">
+                                        Portrait
+                                    </option>
+
+                                    <option value="landscape">
+                                        Landscape
+                                    </option>
+
+                                    <option value="square">
+                                        Square
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-field">
+
+                                <label for="delivery-speed">
+                                    Delivery Speed
+                                </label>
+
+                                <select id="delivery-speed">
+
+                                    <option value="standard">
+                                        Standard Delivery
+                                    </option>
+
+                                    <option value="priority">
+                                        Priority Delivery, +20%
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MURAL OPTIONS -->
+
+                    <div
+                        id="mural-options"
+                        class="hidden"
+                    >
+
+                        <div class="form-grid">
+
+                            <div class="form-field">
+
+                                <label for="wall-width">
+                                    Wall Width in Feet
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="wall-width"
+                                    min="1"
+                                    max="100"
+                                    step="0.5"
+                                    value="10"
+                                >
+
+                            </div>
+
+
+                            <div class="form-field">
+
+                                <label for="wall-height">
+                                    Wall Height in Feet
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="wall-height"
+                                    min="1"
+                                    max="100"
+                                    step="0.5"
+                                    value="8"
+                                >
+
+                            </div>
+
+
+                            <div class="form-field">
+
+                                <label for="mural-detail">
+                                    Design Complexity
+                                </label>
+
+                                <select id="mural-detail">
+
+                                    <option value="simple">
+                                        Simple Design
+                                    </option>
+
+                                    <option value="detailed">
+                                        Detailed Design
+                                    </option>
+
+                                    <option value="premium">
+                                        Premium Realistic Design
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-field">
+
+                                <label for="mural-location">
+                                    Mural Location
+                                </label>
+
+                                <select id="mural-location">
+
+                                    <option value="indoor">
+                                        Indoor
+                                    </option>
+
+                                    <option value="outdoor">
+                                        Outdoor
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <p class="estimate-note">
+                            Mural pricing is an initial estimate. Surface
+                            preparation, travel, scaffolding, accommodation
+                            and protective coating may be quoted separately.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CUSTOMER DETAILS -->
+
+                <div class="form-section">
+
+                    <div class="form-section-heading">
+
+                        <span>04</span>
+
+                        <div>
+                            <h2>Your Contact Details</h2>
+
+                            <p>
+                                We will use these details to confirm the
+                                requirements and final quotation.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="form-grid">
+
+                        <div class="form-field">
+
+                            <label for="customer-name">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="customer-name"
+                                autocomplete="name"
+                                placeholder="Enter your full name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="customer-phone">
+                                WhatsApp Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="customer-phone"
+                                autocomplete="tel"
+                                placeholder="10-digit mobile number"
+                                maxlength="10"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="customer-email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="customer-email"
+                                autocomplete="email"
+                                placeholder="name@example.com"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="required-date">
+                                Required Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="required-date"
+                            >
+
+                        </div>
+
+
+                        <div class="form-field form-field-full">
+
+                            <label for="delivery-address">
+                                Delivery or Installation Address
+                            </label>
+
+                            <textarea
+                                id="delivery-address"
+                                rows="4"
+                                placeholder="House number, street, locality, city, state and PIN code"
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <div class="form-field form-field-full">
+
+                            <label for="customer-notes">
+                                Special Requirements
+                            </label>
+
+                            <textarea
+                                id="customer-notes"
+                                rows="5"
+                                placeholder="Describe the background, colours, pose, frame preference, mural idea or any other requirement"
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <!-- ORDER SUMMARY -->
+
+        <aside class="order-summary-card">
+
+            <p class="summary-label">
+                ORDER ESTIMATE
+            </p>
+
+            <h2>Your Selection</h2>
+
+            <div class="summary-list">
+
+                <div class="summary-row">
+
+                    <span>Artwork</span>
+
+                    <strong id="summary-artwork">
+                        Pencil Portrait
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row" id="summary-size-row">
+
+                    <span>Size</span>
+
+                    <strong id="summary-size">
+                        A4
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row" id="summary-people-row">
+
+                    <span>People</span>
+
+                    <strong id="summary-people">
+                        1
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row" id="summary-frame-row">
+
+                    <span>Frame</span>
+
+                    <strong id="summary-frame">
+                        No Frame
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row hidden" id="summary-area-row">
+
+                    <span>Wall Area</span>
+
+                    <strong id="summary-area">
+                        80 sq. ft.
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="price-breakdown">
+
+                <div class="price-row">
+
+                    <span>Estimated total</span>
+
+                    <strong id="estimated-total">
+                        ₹1,499
+                    </strong>
+
+                </div>
+
+                <div class="price-row advance-row">
+
+                    <span>30% booking advance</span>
+
+                    <strong id="booking-advance">
+                        ₹450
+                    </strong>
+
+                </div>
+
+                <div class="price-row">
+
+                    <span>Balance after approval</span>
+
+                    <strong id="remaining-balance">
+                        ₹1,049
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <p class="estimate-disclaimer">
+                This is an estimated price. The final amount will be
+                confirmed after reviewing your reference photo,
+                complexity, materials and delivery location.
+            </p>
+
+
+            <label class="terms-row">
+
+                <input type="checkbox" id="terms-checkbox">
+
+                <span>
+                    I understand that this is an estimated quotation
+                    and the final price may change after review.
+                </span>
+
+            </label>
+
+             <div class="photo-upload-reminder">
+
+                <strong>Photo attachment required</strong>
+
+               <p>
+                  After WhatsApp opens, tap the attachment icon and add
+                  the same reference photo before sending your order request.
+               </p>
+
+              </div>
+            <button
+                type="button"
+                class="place-order-button"
+                id="place-order-button"
+            >
+                Continue to WhatsApp & Attach Photo
+            </button>
+
+            <p class="whatsapp-review-note">
+                Your request will be reviewed personally through WhatsApp.
+                The final price, delivery timeline and payment method will be
+                confirmed after reviewing your reference photo.
+            </p>
+
+
+            <p
+                class="form-message"
+                id="order-message"
+                aria-live="polite"
+            ></p>
+
+        </aside>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+            Auriel Artworks
+        </div>
+
+        <p class="footer-description">
+            Portraits • Paintings • Murals • Luxury Wall Art
+        </p>
+
+        <p class="copyright">
+            © 2026 Auriel Artworks. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- MOBILE MENU AND ORDER CALCULATOR -->
+
+    <script>
+        const menuToggle =
+            document.getElementById("menu-toggle");
+
+        const navLinks =
+            document.getElementById("nav-links");
+
+        if (menuToggle && navLinks) {
+
+            menuToggle.addEventListener("click", function() {
+
+                const isOpen =
+                    navLinks.classList.toggle("show-menu");
+
+                menuToggle.classList.toggle("open");
+
+                menuToggle.setAttribute(
+                    "aria-expanded",
+                    isOpen
+                );
+
+            });
+
+        }
+
+
+        const priceData = {
+            pencil: {
+                name: "Pencil Portrait",
+                basePrice: 1499
+            },
+
+            "colour-pencil": {
+                name: "Colour Pencil Portrait",
+                basePrice: 2499
+            },
+
+            acrylic: {
+                name: "Acrylic Painting",
+                basePrice: 2999
+            },
+
+            canvas: {
+                name: "Canvas Painting",
+                basePrice: 3499
+            },
+
+            watercolour: {
+                name: "Watercolour Painting",
+                basePrice: 2499
+            },
+
+            quadro: {
+                name: "Quadro Wall Art",
+                basePrice: 3999
+            },
+
+            mural: {
+                name: "Mural Painting",
+                basePrice: 350
+            }
+        };
+
+
+        const sizePrices = {
+            a4: 0,
+            a3: 1000,
+            a2: 2500,
+            a1: 5000
+        };
+
+
+        const sizeNames = {
+            a4: "A4",
+            a3: "A3",
+            a2: "A2",
+            a1: "A1"
+        };
+
+
+        const framePrices = {
+            none: 0,
+            standard: 700,
+            premium: 1500
+        };
+
+
+        const frameNames = {
+            none: "No Frame",
+            standard: "Standard Frame",
+            premium: "Premium Frame"
+        };
+
+
+        const artworkRadios =
+            document.querySelectorAll(
+                'input[name="artwork-type"]'
+            );
+
+        const standardOptions =
+            document.getElementById(
+                "standard-artwork-options"
+            );
+
+        const muralOptions =
+            document.getElementById("mural-options");
+
+        const artworkSize =
+            document.getElementById("artwork-size");
+
+        const peopleCount =
+            document.getElementById("people-count");
+
+        const frameOption =
+            document.getElementById("frame-option");
+
+        const backgroundOption =
+            document.getElementById("background-option");
+
+        const deliverySpeed =
+            document.getElementById("delivery-speed");
+
+        const wallWidth =
+            document.getElementById("wall-width");
+
+        const wallHeight =
+            document.getElementById("wall-height");
+
+        const muralDetail =
+            document.getElementById("mural-detail");
+
+        const muralLocation =
+            document.getElementById("mural-location");
+
+
+        function getSelectedArtworkType() {
+            return document.querySelector(
+                'input[name="artwork-type"]:checked'
+            ).value;
+        }
+
+
+        function formatCurrency(amount) {
+            return new Intl.NumberFormat(
+                "en-IN",
+                {
+                    style: "currency",
+                    currency: "INR",
+                    maximumFractionDigits: 0
+                }
+            ).format(amount);
+        }
+
+
+        function calculatePrice() {
+            const selectedType =
+                getSelectedArtworkType();
+
+            let total = 0;
+
+            if (selectedType === "mural") {
+                const width = Math.max(
+                    1,
+                    Number(wallWidth.value) || 1
+                );
+
+                const height = Math.max(
+                    1,
+                    Number(wallHeight.value) || 1
+                );
+
+                const area = width * height;
+
+                let rate = 350;
+
+                if (muralDetail.value === "detailed") {
+                    rate = 500;
+                }
+
+                if (muralDetail.value === "premium") {
+                    rate = 700;
+                }
+
+                total = area * rate;
+
+                if (muralLocation.value === "outdoor") {
+                    total += area * 75;
+                }
+
+                document
+                    .getElementById("summary-area")
+                    .textContent =
+                    area.toFixed(1) + " sq. ft.";
+
+            } else {
+                total =
+                    priceData[selectedType].basePrice;
+
+                total +=
+                    sizePrices[artworkSize.value];
+
+                const additionalPeople =
+                    Math.max(
+                        0,
+                        Number(peopleCount.value) - 1
+                    );
+
+                total += additionalPeople * 750;
+
+                total +=
+                    framePrices[frameOption.value];
+
+                if (
+                    backgroundOption.value ===
+                    "detailed"
+                ) {
+                    total += 1000;
+                }
+
+                if (
+                    deliverySpeed.value ===
+                    "priority"
+                ) {
+                    total *= 1.2;
+                }
+            }
+
+            total = Math.round(total);
+
+            const advance =
+                Math.round(total * 0.30);
+
+            const balance =
+                total - advance;
+
+            updateSummary(
+                selectedType,
+                total,
+                advance,
+                balance
+            );
+        }
+
+
+        function updateSummary(
+            selectedType,
+            total,
+            advance,
+            balance
+        ) {
+            const isMural =
+                selectedType === "mural";
+
+            document
+                .getElementById("summary-artwork")
+                .textContent =
+                priceData[selectedType].name;
+
+            standardOptions.classList.toggle(
+                "hidden",
+                isMural
+            );
+
+            muralOptions.classList.toggle(
+                "hidden",
+                !isMural
+            );
+
+            document
+                .getElementById("summary-size-row")
+                .classList.toggle(
+                    "hidden",
+                    isMural
+                );
+
+            document
+                .getElementById("summary-people-row")
+                .classList.toggle(
+                    "hidden",
+                    isMural
+                );
+
+            document
+                .getElementById("summary-frame-row")
+                .classList.toggle(
+                    "hidden",
+                    isMural
+                );
+
+            document
+                .getElementById("summary-area-row")
+                .classList.toggle(
+                    "hidden",
+                    !isMural
+                );
+
+            if (!isMural) {
+                document
+                    .getElementById("summary-size")
+                    .textContent =
+                    sizeNames[artworkSize.value];
+
+                document
+                    .getElementById("summary-people")
+                    .textContent =
+                    peopleCount.value;
+
+                document
+                    .getElementById("summary-frame")
+                    .textContent =
+                    frameNames[frameOption.value];
+            }
+
+            document
+                .getElementById("estimated-total")
+                .textContent =
+                formatCurrency(total);
+
+            document
+                .getElementById("booking-advance")
+                .textContent =
+                formatCurrency(advance);
+
+            document
+                .getElementById("remaining-balance")
+                .textContent =
+                formatCurrency(balance);
+        }
+
+
+        artworkRadios.forEach(function(radio) {
+            radio.addEventListener(
+                "change",
+                calculatePrice
+            );
+        });
+
+
+        [
+            artworkSize,
+            peopleCount,
+            frameOption,
+            backgroundOption,
+            deliverySpeed,
+            wallWidth,
+            wallHeight,
+            muralDetail,
+            muralLocation
+        ].forEach(function(control) {
+
+            control.addEventListener(
+                "change",
+                calculatePrice
+            );
+
+            control.addEventListener(
+                "input",
+                calculatePrice
+            );
+
+        });
+
+
+        const photoInput =
+            document.getElementById(
+                "reference-photo"
+            );
+
+        const photoPreview =
+            document.getElementById(
+                "photo-preview"
+            );
+
+        const uploadPlaceholder =
+            document.getElementById(
+                "upload-placeholder"
+            );
+
+        const photoMessage =
+            document.getElementById(
+                "photo-message"
+            );
+
+
+        photoInput.addEventListener(
+            "change",
+            function() {
+
+                const selectedFile =
+                    photoInput.files[0];
+
+                photoMessage.textContent = "";
+
+                if (!selectedFile) {
+                    return;
+                }
+
+                const allowedTypes = [
+                    "image/jpeg",
+                    "image/png",
+                    "image/webp"
+                ];
+
+                if (
+                    !allowedTypes.includes(
+                        selectedFile.type
+                    )
+                ) {
+                    photoMessage.textContent =
+                        "Please select a JPG, PNG or WEBP image.";
+
+                    photoInput.value = "";
+
+                    return;
+                }
+
+                const maxSize =
+                    6 * 1024 * 1024;
+
+                if (
+                    selectedFile.size > maxSize
+                ) {
+                    photoMessage.textContent =
+                        "The image must be smaller than 6 MB.";
+
+                    photoInput.value = "";
+
+                    return;
+                }
+
+                const reader =
+                    new FileReader();
+
+                reader.onload = function(event) {
+
+                    photoPreview.src =
+                        event.target.result;
+
+                    photoPreview.classList.add(
+                        "show"
+                    );
+
+                    uploadPlaceholder.classList.add(
+                        "hidden"
+                    );
+
+                };
+
+                reader.readAsDataURL(
+                    selectedFile
+                );
+
+            }
+        );
+
+
+        const placeOrderButton =
+            document.getElementById(
+                "place-order-button"
+            );
+
+        const orderMessage =
+            document.getElementById(
+                "order-message"
+            );
+
+
+        placeOrderButton.addEventListener(
+            "click",
+            function() {
+
+                orderMessage.textContent = "";
+
+                const customerName =
+                    document
+                        .getElementById(
+                            "customer-name"
+                        )
+                        .value
+                        .trim();
+
+                const customerPhone =
+                    document
+                        .getElementById(
+                            "customer-phone"
+                        )
+                        .value
+                        .trim();
+
+                const customerEmail =
+                    document
+                        .getElementById(
+                            "customer-email"
+                        )
+                        .value
+                        .trim();
+
+                const deliveryAddress =
+                    document
+                        .getElementById(
+                            "delivery-address"
+                        )
+                        .value
+                        .trim();
+
+                const customerNotes =
+                    document
+                        .getElementById(
+                            "customer-notes"
+                        )
+                        .value
+                        .trim();
+
+                const requiredDate =
+                    document
+                        .getElementById(
+                            "required-date"
+                        )
+                        .value;
+
+                const termsAccepted =
+                    document
+                        .getElementById(
+                            "terms-checkbox"
+                        )
+                        .checked;
+
+                if (!customerName) {
+                    orderMessage.textContent =
+                        "Please enter your full name.";
+                    return;
+                }
+
+                if (
+                    !/^[0-9]{10}$/.test(
+                        customerPhone
+                    )
+                ) {
+                    orderMessage.textContent =
+                        "Please enter a valid 10-digit mobile number.";
+                    return;
+                }
+
+                if (!customerEmail) {
+                    orderMessage.textContent =
+                        "Please enter your email address.";
+                    return;
+                }
+
+                if (!deliveryAddress) {
+                    orderMessage.textContent =
+                        "Please enter the delivery or installation address.";
+                    return;
+                }
+
+                if (!termsAccepted) {
+                    orderMessage.textContent =
+                        "Please accept the estimate terms before continuing.";
+                    return;
+                }
+
+                const selectedType =
+                    getSelectedArtworkType();
+
+                const total =
+                    document
+                        .getElementById(
+                            "estimated-total"
+                        )
+                        .textContent;
+
+                const advance =
+                    document
+                        .getElementById(
+                            "booking-advance"
+                        )
+                        .textContent;
+
+                let requirements = "";
+
+                if (selectedType === "mural") {
+                    requirements =
+                        "Wall Size: " +
+                        wallWidth.value +
+                        " ft x " +
+                        wallHeight.value +
+                        " ft\n" +
+                        "Complexity: " +
+                        muralDetail.options[
+                            muralDetail.selectedIndex
+                        ].text +
+                        "\n" +
+                        "Location Type: " +
+                        muralLocation.options[
+                            muralLocation.selectedIndex
+                        ].text;
+                } else {
+                    requirements =
+                        "Size: " +
+                        sizeNames[
+                            artworkSize.value
+                        ] +
+                        "\n" +
+                        "People: " +
+                        peopleCount.value +
+                        "\n" +
+                        "Frame: " +
+                        frameNames[
+                            frameOption.value
+                        ] +
+                        "\n" +
+                        "Background: " +
+                        backgroundOption.options[
+                            backgroundOption.selectedIndex
+                        ].text +
+                        "\n" +
+                        "Delivery: " +
+                        deliverySpeed.options[
+                            deliverySpeed.selectedIndex
+                        ].text;
+                }
+
+                const message =
+                    "Hi Auriel Artworks,\n\n" +
+                    "I would like to request a custom artwork.\n\n" +
+                    "Name: " +
+                    customerName +
+                    "\n" +
+                    "Phone: " +
+                    customerPhone +
+                    "\n" +
+                    "Email: " +
+                    customerEmail +
+                    "\n\n" +
+                    "Artwork: " +
+                    priceData[selectedType].name +
+                    "\n" +
+                    requirements +
+                    "\n\n" +
+                    "Estimated Total: " +
+                    total +
+                    "\n" +
+                    "30% Booking Advance: " +
+                    advance +
+                    "\n\n" +
+                    "Required Date: " +
+                    (requiredDate || "Not specified") +
+                    "\n\n" +
+                    "Address: " +
+                    deliveryAddress +
+                    "\n\n" +
+                    "Special Requirements: " +
+                    (customerNotes || "None") +
+                    "\n\n" +
+                    "IMPORTANT: Please attach the reference photo to this WhatsApp chat before sending the message.";
+                const whatsappUrl =
+                    "https://wa.me/916382104061?text=" +
+                    encodeURIComponent(message);
+
+                window.open(
+                    whatsappUrl,
+                    "_blank",
+                    "noopener,noreferrer"
+                );
+
+            }
+        );
+
+
+        calculatePrice();
+    </script>
+
+</body>
+
+</html>
